@@ -4,10 +4,9 @@ Generic transform system that processes all raw data downloaded during ingest.
 Discovers dataflows from raw/ directory - no config needed.
 """
 
-import os
 from pathlib import Path
 
-from general import load_dataflows, load_dataflow_data, dataflow_to_dataset_id
+from utils import load_dataflows, load_dataflow_data, dataflow_to_dataset_id
 from subsets_utils import upload_data, publish, get_data_dir
 
 

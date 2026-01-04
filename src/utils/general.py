@@ -57,7 +57,11 @@ def normalize_record(record: Dict[str, Any]) -> Dict[str, Any]:
     for key, value in record.items():
         lower_key = key.lower()
         if lower_key == 'obs_value':
-            normalized[lower_key] = float(value) if value else None
+            # Handle SDMX null representations: empty string, '.', etc.
+            if not value or value == '.':
+                normalized[lower_key] = None
+            else:
+                normalized[lower_key] = float(value)
         else:
             normalized[lower_key] = value
     return normalized

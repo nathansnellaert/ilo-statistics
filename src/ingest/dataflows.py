@@ -1,7 +1,6 @@
-
 """Ingest ILO dataflow catalogue."""
 
-from ilo_client import get_dataflows
+from utils import get_dataflows
 from subsets_utils import save_raw_json
 
 

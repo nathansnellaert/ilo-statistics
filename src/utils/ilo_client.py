@@ -1,5 +1,3 @@
-# Add parent directory (connector root) to path for utils
-
 """ILO SDMX API client with rate limiting."""
 
 from ratelimit import limits, sleep_and_retry
