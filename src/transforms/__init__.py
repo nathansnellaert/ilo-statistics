@@ -6,7 +6,7 @@ Discovers dataflows from raw/ directory - no config needed.
 
 from pathlib import Path
 
-from utils import load_dataflows, load_dataflow_data, dataflow_to_dataset_id
+from general import load_dataflows, load_dataflow_data, dataflow_to_dataset_id
 from subsets_utils import upload_data, publish, get_data_dir
 
 

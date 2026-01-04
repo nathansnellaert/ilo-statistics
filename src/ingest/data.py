@@ -1,6 +1,7 @@
 """Ingest all ILO dataflow data."""
 
-from utils import load_dataflows, get_data_csv
+from general import load_dataflows
+from ilo_client import get_data_csv
 from subsets_utils import save_raw_file
 
 
